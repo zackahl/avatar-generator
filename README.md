@@ -9,7 +9,7 @@ Source code: https://github.com/download13/blockies
 Zachary Kahl
 
 ### Version
-1
+1.0
 
 ### License
 This project is licensed under the MIT License.
