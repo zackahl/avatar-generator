@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+body {
+	width: 100vw;
+	padding: 5%;
+	overflow-x: hidden;
+}
+h1 {
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 26px;
+}
+label {
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: .5em;
+}
+footer {
+	margin: 10px;
+}
+#color {
+	background: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	border: none;
+}
+#particles-js {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+.container {
+	background: rgba(0, 0, 0, 0.5);
+	border: 3px solid #5083b7;
+	border-radius: 20px;
+	max-width: 768px;
+	padding: 20px;
+	z-index: 1;
+	color: #fff;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.container:hover {	
+	-webkit-box-shadow: 0 0 20px 1px #5083b7;	
+	box-shadow: 0 0 20px 1px #5083b7;
+	background: rgba(0, 0, 0, 0.7);
+}
+.form-control,
+.btn {
+	min-height: 40px;
+	border: none;
+}
+.input-group {
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	overflow: scroll;
+}
+.btn-group > .btn {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+.btn-primary {
+	border: 1px solid transparent;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.btn-primary:hover {
+	border: 1px solid #5083b7;
+}
+

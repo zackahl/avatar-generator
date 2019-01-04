@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Avatar Generator</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Generate a unique pixelated avatar based on your username.">
+		<meta name="author" content="Zachary Kahl">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/slate/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/style.css" />
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" href="favicon.ico">
+	</head>
+
+	<body>
+		<div class="container">
+		
+			<!-- // Particles // -->
+			<div id="particles-js"></div>
+
+			<!-- // Title // -->
+			<div class="row">
+				<div class="col mt-3 text-center">
+					<h1>Avatar Generator</h1>
+					<hr/>
+				</div>
+			</div>
+
+			<!-- // Username // -->
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-xs-12 mb-3">
+					<label>Username</label>
+					<div class="input-group">
+						<input id="username" type="text" class="form-control" placeholder="Username" aria-label="Username" value="">
+						<div class="input-group-append">
+							<button class="btn btn-primary" type="button">Generate</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- // Colours -->
+			<div class="row">
+				<div id="bgcolor" class="col-md-6 col-xs-12 mb-3">
+					<label>Background Colour</label>
+					<div class="btn-group btn-group-toggle input-group" data-toggle="buttons">
+						<label class="btn btn-secondary active">
+							<input type="radio" name="bgcolor" value="transparent" checked> Transparent
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="bgcolor" value="white"> White
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="bgcolor" value="black"> Black
+						</label>
+					</div>
+				</div>
+				<div class="col-md-6 col-xs-12 mb-3">
+					<label>Avatar Colour</label>
+					<div class="btn-group btn-group-toggle input-group">
+						<label class="btn btn-secondary active">
+							<input id="color" type="color" name="color" value="#5083b7" checked>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- // Pixels // -->
+			<div class="row">
+				<div id="pixels" class="col-md-6 col-xs-12 mb-3">
+					<label>Pixels<sup> 2</sup></label>
+					<div class="btn-group btn-group-toggle input-group" data-toggle="buttons">
+						<label class="btn btn-secondary">
+							<input type="radio" name="pixels" value="8"> 8
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="pixels" value="12"> 12
+						</label>
+						<label class="btn btn-secondary active">
+							<input type="radio" name="pixels" value="16" checked> 16
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="pixels" value="20"> 20
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="pixels" value="24"> 24
+						</label>
+					</div>
+				</div>
+				<div id="scale" class="col-md-6 col-xs-12 mb-3">
+					<label>Pixel Scale</label>
+					<div class="btn-group btn-group-toggle input-group" data-toggle="buttons">
+						<label class="btn btn-secondary">
+							<input type="radio" name="scale" value="2"> 2
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="scale" value="4"> 4
+						</label>
+						<label class="btn btn-secondary active">
+							<input type="radio" name="scale" value="6" checked> 6
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="scale" value="8"> 8
+						</label>
+						<label class="btn btn-secondary">
+							<input type="radio" name="scale" value="10"> 10
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- // Avatar // -->
+			<div class="row">
+				<div class="col my-5 text-center" id="avatar"></div>
+			</div>
+
+			<!-- // Dimensions // -->
+			<div class="row">
+				<sub class="col mb-5 text-center" id="dimensions"></sub>
+			</div>
+
+			<!-- // Download // -->
+			<div class="row text-center">
+				<div id="download" class="col"></div>
+			</div>
+			
+		</div>
+	</body>
+
+	<footer>
+		<div class="col my-3 text-center">
+			<p>
+				<a href="https://www.zacharykahl.com">&copy; 2019 Zachary Kahl</a>
+				<br>
+				<sub><a href="https://github.com/download13/blockies">Source Code</a></sub>
+			</p>
+		</div>
+	</footer>
+
+	<!-- // Scripts // -->
+	<!-- JQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+	<!-- Bootstap JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js" async defer></script>
+	<!-- Particles.js -->
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" async defer></script>
+	<!-- Functions -->
+	<script type="text/javascript" src="assets/functions.js" async defer></script>
+
+</html>
