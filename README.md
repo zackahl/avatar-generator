@@ -1,6 +1,8 @@
 # Avatar Generator
 Generate a unique pixelated avatar based on your username.
 
+Try it out here: https://zackahl.github.io/avatar-generator/
+
 Source code: https://github.com/download13/blockies
 
 ### Author
