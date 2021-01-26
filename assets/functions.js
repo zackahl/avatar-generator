@@ -206,6 +206,13 @@ window.onload = function () {
 
 // My Additions ---------------------------------------------------------------------------
 
+// Get current year for copyright
+$(document).ready(function () {
+	var date = new Date();
+	var year = date.getFullYear();
+	document.getElementById("year").innerHTML = year;
+})
+
 // Generate avatar
 var generate = function () {
 
