@@ -106,6 +106,11 @@ window.onload = function () {
 		},
 		"retina_detect": true
 	});
+
+	// Get current year for copyright
+	var date = new Date();
+	var year = date.getFullYear();
+	document.getElementById("year").innerHTML = year;
 };
 
 // -- Source code (https://github.com/download13/blockies) --------------------------------
